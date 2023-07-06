@@ -1,22 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href='/fav.png' rel='shortcut icon'>
-    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <meta content="Emoji searcher" property="og:title">
-    <meta content="Emoji searcher" property="title">
-    <meta content="Find the emoji that echoes your heart using keywords! No need to remember all the names of emoji." property="description">
-    <meta content="Find the emoji that echoes your heart using keywords! No need to remember all the names of emoji." property="og:description">
-    <meta content="https://emoji.muan.co/appicon.png" property="og:image">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="/fav.png" rel="shortcut icon" />
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="Emoji searcher" property="og:title" />
+    <meta content="Emoji searcher" property="title" />
+    <meta content="Find the emoji that echoes your heart using keywords! No need to remember all the names of emoji." property="description" />
+    <meta content="Find the emoji that echoes your heart using keywords! No need to remember all the names of emoji." property="og:description" />
+    <meta content="https://emoji.muan.co/appicon.png" property="og:image" />
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Emoji searcher" />
     <title>Emoji searcher</title>
-    <link rel="apple-touch-icon-precomposed" sizes="64x64" href="/appicon.png">
-    <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon-precomposed" sizes="64x64" href="/appicon.png" />
+    <link href="stylesheets/style.css" rel="stylesheet" />
     <script>
-      if(location.hostname === "muan.co") {
-        location.href = "https://emoji.muan.co/" + location.hash
+      if (location.hostname === 'muan.co') {
+        location.href = 'https://emoji.muan.co/' + location.hash;
       }
     </script>
   </head>
@@ -25,28 +25,17 @@
     <header class="site-header">
       <button type="button" class="button pull-right js-twemoji">Twemoji</button>
       <button type="button" class="button pull-right js-remove-twemoji">Remove Twemoji</button>
-      <input type="search" class="input-search speedy-filter" placeholder="Search" autofocus aria-label="Search emoji">
+      <input type="search" class="input-search speedy-filter" placeholder="Search" autofocus aria-label="Search emoji" />
       <a href="#" class="button js-clear-search clear-search">❌</a>
-      <a href="#cats" class="mojigroup button">
-        🐈
-      </a>
-      <a href="#transportation" class="mojigroup button">
-        🚗
-      </a>
-      <a href="#food" class="mojigroup button">
-        🍱
-      </a>
-      <a href="#fruit" class="mojigroup button">
-        🍎
-      </a>
-      <a href="#photo" class="mojigroup button">
-        🌁
-      </a>
+      <a href="#cats" class="mojigroup button"> 🐈 </a>
+      <a href="#transportation" class="mojigroup button"> 🚗 </a>
+      <a href="#food" class="mojigroup button"> 🍱 </a>
+      <a href="#fruit" class="mojigroup button"> 🍎 </a>
+      <a href="#photo" class="mojigroup button"> 🌁 </a>
     </header>
 
     <main class="list">
-      <ul class="emojis-container">
-      </ul>
+      <ul class="emojis-container"></ul>
 
       <div class="loading">
         Loading
@@ -55,7 +44,7 @@
 
       <div class="no-results">
         <span class="text-big">😭</span>
-        <br><div class="no-results-text">No results</div>
+        <br /><div class="no-results-text">No results</div>
         <p>
           Help your future self by adding
           <strong class="keyword"></strong>
@@ -68,8 +57,7 @@
     </main>
 
     <footer class="site-footer">
-      <a href="https://twitter.com/muanchiou" target="_blank">@muanchiou</a> |
-      <a href="https://github.com/muan/emoji/" target="_blank">Site source</a> |
+      <a href="https://twitter.com/muanchiou" target="_blank">@muanchiou</a> | <a href="https://github.com/muan/emoji/" target="_blank">Site source</a> |
       <a href="https://github.com/muan/emojilib" target="_blank">Data source</a>
     </footer>
     <script type="text/javascript" src="javascripts/stuff.js"></script>
