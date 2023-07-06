@@ -23,8 +23,8 @@
 
   <body>
     <header class="site-header">
-      <button type="button" class="button pull-right js-twemoji">Twemoji</button>
-      <button type="button" class="button pull-right js-remove-twemoji">Remove Twemoji</button>
+      <button type="button" class="button pull-right js-twemoji" title="Use Twitter Emojis instead of your OS emojis">Twemoji</button>
+      <button type="button" class="button pull-right js-remove-twemoji" title="Use Emojis of your OS instead of twitter emojis">Remove Twemoji</button>
       <input type="search" class="input-search speedy-filter" placeholder="Search" autofocus aria-label="Search emoji" />
       <a href="#" class="button js-clear-search clear-search">❌</a>
       <a href="#cats" class="mojigroup button"> 🐈 </a>
@@ -32,6 +32,9 @@
       <a href="#food" class="mojigroup button"> 🍱 </a>
       <a href="#fruit" class="mojigroup button"> 🍎 </a>
       <a href="#photo" class="mojigroup button"> 🌁 </a>
+
+      <label for="emoji-size">Emoji Size:</label>
+      <input type="range" id="emoji-size" name="emoji-size" min="20" max="120" value="50" />
     </header>
 
     <main class="list">
@@ -62,5 +65,6 @@
     </footer>
     <script type="text/javascript" src="javascripts/stuff.js"></script>
     <script type="text/javascript" src="javascripts/search.js"></script>
+    <script type="text/javascript" src="javascripts/style.js"></script>
   </body>
 </html>

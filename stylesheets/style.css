@@ -26,7 +26,7 @@ button {
 }
 
 body {
-  line-height: 1.6em;
+  /* line-height: 1.6em; */
   padding: 10px;
   margin: 0;
   color: #333;
@@ -127,8 +127,10 @@ ul {
 }
 
 .emojis-container {
-  font-size: 0;
-  line-height: 0;
+  /* font-size: 0; */
+  /* line-height: 0; */
+  font-size: 50px;
+  line-height: 75%;
 }
 
 .emoji-code {
@@ -137,9 +139,14 @@ ul {
 }
 
 /* Twemoji */
-.emoji {
+.site-header .emoji {
   width: 18px;
   height: 18px;
+}
+
+.emojis-container .emoji {
+  /* width: 72px; */
+  /* height: 72px; */
 }
 
 .emoji-wrapper {
@@ -253,7 +260,8 @@ li {
 }
 
 .native-emoji {
-  font-size: 19px;
+  /* font-size: 19px; */
+  line-height: 75%;
   padding: 10px 2px;
   font-family: AppleColorEmoji;
 }

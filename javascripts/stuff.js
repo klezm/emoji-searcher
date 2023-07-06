@@ -26,10 +26,28 @@ document.addEventListener('click', function (evt) {
 
 function prepareTwemoji() {
   var twemojiScript = document.createElement('script');
-  twemojiScript.src = '//twemoji.maxcdn.com/2/twemoji.min.js?2.2.3';
+  // twemojiScript.src = '//twemoji.maxcdn.com/2/twemoji.min.js?2.2.3'
+  twemojiScript.src = '//cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js';
   twemojiScript.onload = function () {
-    twemoji.parse(document.body);
+    twemoji.parse(document.body, {
+      // size: '72x72',
+      // folder: 'svg',
+      // ext: '.svg',
+    });
+    // twemoji.parse(document.querySelector('.emojis-container'));
+    // twemoji.parse(document.querySelector('.site-header'));
     document.body.classList.add('twemojified');
+
+    // Use slider to change emoji size
+    const emojiSizeInput = document.getElementById('emoji-size');
+    const emojiImgs = document.querySelectorAll('.emojis-container .emoji');
+    emojiSizeInput.addEventListener('input', () => {
+      const emojiSize = emojiSizeInput.value;
+      emojiImgs.forEach((e) => {
+        e.style.width = `${emojiSize}px`;
+        e.style.height = `${emojiSize}px`;
+      });
+    });
   };
   document.head.append(twemojiScript);
 }
@@ -62,7 +80,7 @@ document.querySelector('.js-twemoji').hidden = showingTwemoji;
 fetch(url)
   .then((data) => data.json())
   .then((json) => {
-    var html;
+    var html = '';
     if (showingTwemoji) prepareTwemoji();
     for (emoji in json) {
       html += `<li class="result emoji-wrapper js-emoji" title="${json[emoji]}">
