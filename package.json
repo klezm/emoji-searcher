@@ -1,0 +1,22 @@
+{
+  "name": "emoji-searcher",
+  "version": "0.1.0",
+  "description": "Search for emoji by name or keyword",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klezm/emoji-searcher.git"
+  },
+  "keywords": [
+    "emoji"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klezm/emoji-searcher/issues"
+  },
+  "homepage": "https://github.com/klezm/emoji-searcher"
+}
