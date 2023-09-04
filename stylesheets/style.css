@@ -83,7 +83,7 @@ footer {
   display: none;
 }
 
-.mojigroup {
+.clear-search .mojigroup {
   margin: 0 0 10px 5px;
   padding: 3px 4px 1px;
 }
@@ -323,4 +323,45 @@ code {
   .emoji-wrapper {
     padding: 0;
   }
+}
+
+/* https://github.com/muan/emoji/pull/191/files */
+
+body {
+  padding: 0px;
+}
+
+.site-header {
+  z-index: 5;
+  position: fixed;
+  background-color: white;
+  padding: 10px 0px;
+  max-width: unset;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+  justify-content: center;
+  align-items: baseline;
+}
+
+.emojis-container {
+  padding-top: 70px;
+}
+
+button.js-twemoji {
+  /* display: flex; */
+}
+
+.list {
+  max-width: unset;
+}
+
+/* my styles */
+
+.header-group {
+  /* margin: 0px; */
+  padding: 0px;
+  display: flex;
+  /* margin: 0 2vh; */
+  margin-left: 2vh;
 }
