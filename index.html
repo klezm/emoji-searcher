@@ -23,18 +23,57 @@
 
   <body>
     <header class="site-header">
-      <button type="button" class="button pull-right js-twemoji" title="Use Twitter Emojis instead of your OS emojis">Twemoji</button>
-      <button type="button" class="button pull-right js-remove-twemoji" title="Use Emojis of your OS instead of twitter emojis">Remove Twemoji</button>
-      <input type="search" class="input-search speedy-filter" placeholder="Search" autofocus aria-label="Search emoji" />
-      <a href="#" class="button js-clear-search clear-search">❌</a>
-      <a href="#cats" class="mojigroup button"> 🐈 </a>
-      <a href="#transportation" class="mojigroup button"> 🚗 </a>
-      <a href="#food" class="mojigroup button"> 🍱 </a>
-      <a href="#fruit" class="mojigroup button"> 🍎 </a>
-      <a href="#photo" class="mojigroup button"> 🌁 </a>
 
-      <label for="emoji-size">Emoji Size:</label>
-      <input type="range" id="emoji-size" name="emoji-size" min="20" max="120" value="50" />
+      <input type="search" class="input-search speedy-filter" placeholder="Search" autofocus aria-label="Search emoji" list="emoji-autocomplete"/>
+
+      <!-- TODO: refactor (https://stackoverflow.com/questions/13568609/autocomplete-text-input) -->
+      <datalist id="emoji-autocomplete">
+        <!-- TODO: cats excludes some cat emojies, but cat includes to much -->
+        <option value="Cat">🐈</option>
+        <option value="Transportation">🚂</option>
+        <option value="Food">🍽️</option>
+        <option value="Fruit">🍎</option>
+        <option value="Photo">🌁</option>
+        <option value="Face">😃</option>
+        <option value="Fingers">🤚</option>
+        <option value="Animal">🐎</option>
+        <option value="Building">🏫</option>
+        <option value="Arrow">⬆️</option>
+        <option value="Chinese">🈳</option>
+        <option value="Numbers">1️⃣</option>
+        <option value="Flag">🏳️‍🌈</option>
+      </datalist>
+
+      <div class="header-group">
+        <a href="#" class="button js-clear-search clear-search" title="Clear Search">❌</a>
+        <a href="#Cats" class="mojigroup button" title="Cat"> 🐈 </a>
+        <a href="#Transportation" class="mojigroup button" title="Transportation"> 🚂 </a>
+        <a href="#Food" class="mojigroup button" title="Food"> 🍽️ </a>
+        <a href="#Fruit" class="mojigroup button" title="Fruit"> 🍎 </a>
+        <a href="#Photo" class="mojigroup button" title="Photo"> 🌁 </a>
+
+        <!-- <a href="#Face" class="mojigroup button"> 😃 </a>
+        <a href="#Fingers" class="mojigroup button"> 🤚 </a>
+        <a href="#Animal" class="mojigroup button"> 🐎 </a>
+        <a href="#Transportation" class="mojigroup button"> 🚗 </a>
+        <a href="#Food" class="mojigroup button"> 🍱 </a>
+        <a href="#Building" class="mojigroup button"> 🏫 </a>
+        <a href="#Arrow" class="mojigroup button"> ⬆️ </a>
+        <a href="#Chinese" class="mojigroup button"> 🈳 </a>
+        <a href="#Numbers" class="mojigroup button"> 1️⃣ </a>
+        <a href="#Flag" class="mojigroup button"> 🏳️‍🌈 </a> -->
+      </div>
+
+      <div class="header-group">
+        <label for="emoji-size">Emoji Size:</label>
+        <input type="range" id="emoji-size" name="emoji-size" min="20" max="120" value="50" />
+      </div>
+
+      <div class="header-group">
+        <button type="button" class="button pull-right js-twemoji" title="Use Twitter Emojis instead of your OS emojis">Twemoji</button>
+        <button type="button" class="button pull-right js-remove-twemoji" title="Use Emojis of your OS instead of twitter emojis">Remove Twemoji</button>
+      </div>
+
     </header>
 
     <main class="list">

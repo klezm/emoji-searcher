@@ -24,10 +24,31 @@ There are almost 900 emoji, more keywords let you find emoji more easily. Go to 
 Open in Stackblitz using
 [source](https://developer.stackblitz.com/guides/user-guide/importing-projects):
 
+<!-- ```less -->
+<!-- ```md -->
+<!-- ```yml -->
+<!-- ```reasonml -->
+<!-- ``` -->
+<!-- ```css -->
+<!-- ```scss -->
+<!-- ```oxygene -->
 <!-- ```cal -->
+<!-- ```ini -->
 <!-- ```dust -->
-```ini
+<!-- ``` -->
+<!-- ```elm -->
+<!-- ```powershell -->
+<!-- ```brainfuck -->
+<!-- ```js -->
+
+```elm
 stackblitz.com/[fork/]github/{GH_USERNAME}/{REPO_NAME}[/tree/{TAG|BRANCH|COMMIT}][?startScript={npm_script_name}&title={custom title}]
+
+Arguments:
+startScript={npm_script_name}
+configPath={packages/docs}
+title={custom title}]
+file={index.html}
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/klezm/emoji-searcher)

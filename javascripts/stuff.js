@@ -85,6 +85,8 @@ fetch(url)
     for (emoji in json) {
       html += `<li class="result emoji-wrapper js-emoji" title="${json[emoji]}">
       <div class="js-emoji-char native-emoji" data-emoji="${emoji}" >${emoji}</div></li>`;
+      // TODO: remove li & div tags => performance
+      // html += `${emoji}`;
     }
     container.innerHTML = html;
     document.querySelector('.loading').remove();
